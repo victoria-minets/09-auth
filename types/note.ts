@@ -1,3 +1,5 @@
+// types\note.ts
+
 // Дозволені значення для тега
 export type NoteTag = 'Todo' | 'Work' | 'Personal' | 'Meeting' | 'Shopping';
 
@@ -9,6 +11,7 @@ export interface Note {
   createdAt: string;
   updatedAt: string;
   tag: NoteTag;
+  userId: string; // нове поле від нового бекенду
 }
 
 // Дані для створення нової нотатки
